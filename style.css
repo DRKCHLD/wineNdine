@@ -1,0 +1,523 @@
+@import url('https://fonts.googleapis.com/css2?family=Freeman&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Freeman&family=Kaushan+Script&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'freeman';
+
+}
+
+html {
+    font-size: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+header {
+    padding-top: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+nav {
+    display: flex;
+    position: fixed;
+    justify-content: space-around;
+    z-index: 999;
+    
+    padding: 1.3rem;
+    font-size: 1.5rem;
+    border: 1px solid rgb(160, 4, 4);
+   
+    background: white;
+    width: 100%;    
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    width: 35%;
+    font-size: 1.3rem;
+}
+
+nav ul li a{
+    color: rgb(160, 4, 4);
+    padding: 0.5rem 0.4rem;
+    transition: box-shadow 0.3s ease, border-radius 0.3s ease, transform 0.3s ease;
+    
+}
+
+nav ul li a:hover {
+  
+    transition: 0.2s ease-in-out;
+    border-radius: 7px;
+    box-shadow: 0px 8px 16px rgb(160, 4, 4);
+   
+    
+}
+
+label a {
+    font-family: 'kaushan Script';
+    font-weight: bold;
+    color: rgb(160, 4, 4);   
+}
+
+ button {
+    background: transparent;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+   border: 0.5px solid rgb(160, 4, 4);
+    transition: box-shadow 0.3s ease,  transform 0.3s ease;
+}
+
+button a {
+    color: rgb(160, 4, 4);
+   
+}
+
+button:hover {
+    box-shadow: 0px 8px 16px rgb(160, 4, 4); 
+}
+
+.hero-section {
+    margin-top: 2.5rem;
+    height: 100vh;
+    background-image: url(images/ivan-torres-MQUqbmszGGM-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+.hero-text-container {
+    padding-left: 8%;
+    
+    /* margin-left: 8.5%; */
+}
+.hero-text-container h1 {
+ font-size: 6rem;
+ max-width: 35%;    
+}
+
+.hero-text-container p {
+    color: rgb(255, 170, 0);
+}
+
+ #orange {
+    font-size: 1.5rem;
+    background: white;
+    border: 1px solid rgb(255, 170, 0);
+}
+
+ #orange a{
+    color: rgb(255, 170, 0);
+}
+ #orange:hover{
+   
+    box-shadow: 0px 8px 16px rgb(255, 170, 0);
+}
+
+
+.parent-food-container {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    /* gap: 3rem; */
+    padding: 6%;
+    margin-top: -3%;
+}
+
+.food-item {
+    width: 20%;
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+}
+
+.image-container {
+   
+    border-radius: 9px;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+    margin-bottom: -2rem;
+    height: 60%;
+   
+}
+
+.item2 .image-container {
+    background-image: url(images/ivan-torres-MQUqbmszGGM-unsplash.jpg);
+    
+}
+
+.item3 .image-container {
+    background-image: url(images/annie-spratt-oT7_v-I0hHg-unsplash.jpg);
+}
+
+.item4 .image-container {
+    background-image: url(images/andy-wang-Pf-bZQpCaMI-unsplash.jpg);
+}
+
+.price {
+    
+    background: rgb(231, 156, 6);
+    z-index: 1;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-bottom: 1rem;
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+    font-size: 1rem;
+    padding-bottom: 0.3rem;
+    
+}
+
+.price button a{
+    color: rgb(218, 149, 13);
+}
+
+.price button:hover{
+    box-shadow: 0px 8px 16px rgb(75, 56, 22);
+}
+
+.price button {
+    margin-top:0.5rem ;
+    background-color: white;
+    border: rgb(255, 170, 0);
+}
+
+
+.price h3  , .price p {
+    color: white;
+    font-weight: 500;
+   
+   
+}
+
+.price h3, .price p {
+    padding-bottom: 0.3rem;
+}
+
+.cart-header-container {
+    font-size: 2rem;
+    padding: 2rem;
+    margin-left: 6%;
+    margin-top: 6%;
+    color: rgb(231, 156, 6);
+    
+}
+
+.cart-header-container p {
+font-size: 1.4rem;
+/* margin-bottom: 1rem; */
+color: rgb(160, 4, 4);
+}
+
+.wine-image-container img{
+width: 48%;
+border-radius: 9px;
+}
+
+.wine-image-container {
+    width: 55%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.wine-hero-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 8%;
+}
+
+.wine-detail-container {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    
+}
+
+.wine-detail-container h1 {
+    font-size: 3.5rem;
+    color: rgb(160, 4, 4);
+}
+
+.wine-detail-container p {
+    
+    color: rgb(160, 4, 4);
+}
+
+
+
+.less-time-container img {
+    width: 55%;
+    border-radius: 9px;
+}
+
+.less-time-container {
+    padding: 8%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+.less-text-container {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(255, 170, 0);
+}
+.less-text-container h1 {
+    font-size: 3rem;
+   
+}
+
+.less-text-container button {
+border-color: rgb(255, 170, 0);
+}
+
+.image-grid-container img{
+width: 100%;
+}
+.image-grid-container {
+   
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+
+}
+#long-col {
+    grid-column: 1/3;
+    
+}
+
+.grid-container {
+    padding: 8%;
+    font-size: 2rem;
+    text-align: center;
+
+}
+
+.grid-container h1 {
+    color: rgb(160, 4, 4);
+    margin-bottom: 2rem;
+}
+
+.footer {
+   background: rgb(218, 149, 13);
+    padding: 8%;
+    padding-bottom: 1rem;
+    color: rgb(160, 4, 4);
+    display: flex;
+    flex-direction: column;
+
+}
+
+.wine-with-us {
+    /* font-size: 2rem; */
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5%;
+    border-bottom: 1px solid rgb(160, 4, 4);
+}
+
+.wine-with-us h1 {
+    font-size: 2.5rem;
+    width: 60%;
+}
+
+input {
+    padding: 0.7rem 10rem;
+    border: 1px solid rgb(160, 4, 4);
+    background: none;
+}
+
+
+
+input[type="text"]::placeholder {
+    color: white;
+}
+
+.input-container button {
+    padding: 0.7rem 2rem;
+    border-radius: 0;
+}
+
+.sign-up-container p {
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+.footer-container {
+    margin-top: 15%;
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 13%;
+    font-size: 1rem;
+}
+
+.footer-container label a {
+    font-size:1.6rem ;
+}
+
+.footer-container ul {
+    list-style-type: none;
+}
+
+.footer-container ul li {
+margin-bottom: 0.5rem;
+}
+
+
+
+@media (max-width:800px) {
+    html {
+        font-size: 65.5%;
+    }
+
+    input {
+        padding: 0.7rem 5rem;
+    }
+
+    
+}
+
+@media (min-width:1100px) {
+    html {
+        font-size: 85.5%;
+    }
+
+    
+}
+
+
+
+
+@media (max-width:600px) {
+
+    html {
+        font-size: 60%;
+    }
+    nav ul {
+        display: none;
+    }
+
+    .hero-text-container {
+        align-items: center;
+        text-align: center;
+        padding: 0;
+    }
+    .hero-text-container h1{
+        max-width:90%;
+    }
+
+    #orange {
+        width: 90%;
+        padding: 1rem;
+    }
+
+    .hero-text-container p {
+        font-size: 2rem;
+    }
+
+    .right-nav-bar {
+        display: none;
+    }
+
+    .cart-container {
+        display: none;
+    }
+   
+
+   
+
+    .wine-hero-container {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .wine-detail-container, .wine-image-container {
+        width: 95%;
+    }
+
+    .wine-detail-container {
+        gap: 1rem;
+    }
+
+    .less-time-container {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .less-text-container {
+        width: 95%;
+        gap: 1rem;
+    }
+
+    .less-time-container img {
+        width: 95%;
+    }
+
+
+    .wine-with-us {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .wine-with-us h1 {
+        width: 95%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 3rem;
+        font-size: 1.5rem;
+    }
+
+
+    .footer-container ul li {
+        margin-bottom: 1.5rem;
+    }
+   
+
+    .footer-container label a {
+        font-size: 3rem;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
